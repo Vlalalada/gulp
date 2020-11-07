@@ -1,0 +1,416 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@700&family=Libre+Franklin:wght@400;900&display=swap');
+
+$blue-color:#10CAB7;
+$grey-color:#2F4957;
+$grey-background-color:#FAFAFA;
+
+%imgBlocksStyle{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+html {
+    line-height: 1.15; /* 1 */
+    -webkit-text-size-adjust: 100%; /* 2 */
+  }
+
+body{
+    font-family: 'Karla', sans-serif;
+    font-family: 'Libre Franklin', sans-serif;
+    margin: 0; //Remove the margin in all browsers.
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+
+ h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+}
+
+  /**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+
+hr {
+    box-sizing: content-box; /* 1 */
+    height: 0; /* 1 */
+    overflow: visible; /* 2 */
+}
+
+  /**
+ * Remove the gray background on active links in IE 10.
+ */
+
+a {
+    background-color: transparent;
+}
+
+  /**
+ * Remove the border on images inside links in IE 10.
+ */
+
+img {
+    border-style: none;
+}
+  
+/**
+ * Add the correct display in IE 10.
+ */
+
+[hidden] {
+    display: none;
+}
+
+// .visible {display: block;}
+// .hidden {display: none;}
+
+.icon{color: $blue-color;}
+
+img{
+    max-width:100%;
+    height:auto;
+}
+
+.header{
+    .header__header-nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+        .header__menu{
+            cursor: pointer;
+
+            .header__menu-icon{
+                color: #38505C;
+            }
+
+            .header__menu-drop-down-content{
+                position: absolute;
+                background-color: #2C4755;
+                width: 200px;
+                z-index: 1;
+            }
+
+            .header__menu-drop-down-content_hidden{
+                display: none;
+            }
+
+            .header__menu-drop-down-content_visible{
+                display: block;
+            }
+
+            .header__menu-drop-down-content a{
+                color: white;
+                padding-top:5px;
+                padding-left: 40px;
+                text-decoration: none;
+                display: block;
+            }
+
+            .header__menu-drop-down-content a:hover{
+                color: rgb(172, 169, 169);
+            }
+
+            .header__menu-drop-down-content p {
+                color: rgb(184, 180, 180);
+                padding-top: 20px; 
+                padding-left: 40px;
+                text-decoration: none;
+                display: block;
+            }
+        }
+    }
+    .header__greeting-block{
+        background-color: #F6F6F6;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        height: 350px;
+
+        .header__greeting-headline{
+            color: $blue-color;
+            margin-top: 15px;
+        }
+
+        .header__greeting-description{
+            width: 300px;
+            text-align: center;
+            line-height: 25px;
+            color: #38505C;
+        }
+    }
+}
+
+.steps{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+
+    .steps__item{
+        width: 20%;
+        text-align: center;
+        margin-top: 40px;
+
+        .steps__step-header{
+            margin-top: 30px;
+            font-weight: bold;
+            font-size: 1.3em;
+            color: $grey-color;
+        }
+
+        .steps__step-description{
+            margin-top: 20px;
+            line-height: 30px;
+            color: $grey-color;
+        }
+    }
+}
+
+.services{
+
+    .services__img{
+        @extend %imgBlocksStyle;
+    }
+
+    .services__content{
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+        align-items: center;
+
+        .services__items{
+
+            .services__row{
+                display: flex;
+
+                .services__item{
+                    display: flex;
+                    margin-left: 20px;
+
+                    .services__icon{
+                        margin-right: 20px;
+                        margin-top: 20px;
+                    }
+
+                    .services__element{
+                        flex-direction: column;
+
+                        .services__service-title{
+                            color: #1F2021;
+                        }
+
+                        .services__service-description{
+                            margin-top: 30px;
+                            width: 300px;
+                            color: #2C4755;
+                            line-height: 25px;
+                        }                        
+                    }
+                }
+            }
+        }
+    }
+}
+
+.portfolio{
+    background-color: $grey-background-color;
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+
+    .portfolio__img{
+        @extend %imgBlocksStyle;
+    }
+
+    .portfolio__content{
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 30px;
+
+        .portfolio__card{
+            width: 25%;
+            height: 400px;
+            margin-bottom: 100px;
+            background-color: #F6F6F6;
+            display: flex;
+            align-items: flex-end;
+
+            .portfolio__element{
+                background-color: white;
+                padding-left: 20px;
+
+                .portfolio__project-title{
+                    font-weight: bold;
+                    font-size: 20px;
+                    color: #1F2021;
+                    margin-top: 15px;
+                }
+
+                .portfolio__project-description{
+                    color: #2C4755;
+                    margin-top: 10px;
+                    line-height: 25px;
+                }
+            }
+        }
+    }
+
+}
+
+.about{
+    .about__img{
+        @extend %imgBlocksStyle;
+    }
+
+    .about__content{
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+
+        .about__description{
+            display: flex;
+            flex-direction: column;
+            width: 30%;
+            justify-content: center;
+            margin-left: 60px;
+
+            .about__description-bold{
+                font-weight: bold;
+                font-size: 1.3em;
+                line-height: 35px;
+                margin-bottom: 30px;
+                color: $grey-color;
+                width: 90%;
+            }
+
+            .about__description-light{
+                line-height: 35px;
+                color: #666565;
+                width: 90%;
+            }
+        }
+    }
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    background-color: $grey-background-color;
+    align-items: center;
+    margin-top: 100px;
+
+    .contact__img{
+        @extend %imgBlocksStyle;
+    }
+
+    .contact__content{
+        display: flex;
+        width: 70%;
+        flex-direction: column;
+        background-color: #FAFAFA;
+        margin-top: 30px;
+        margin-bottom: 80px;
+    }
+}
+
+.footer{
+    background-color: $grey-color;
+    display: flex;
+    height: 70px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+}
+
+@media screen and (max-width:800px){
+
+    .steps{
+        flex-direction: column;
+        align-items: center;
+
+        .steps__item{
+            width: 70%;
+        }
+    }
+
+    .services{
+
+        .services__content{
+            align-items: flex-start;
+
+            .services__items{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            
+                .services__row{
+                    flex-direction: column;
+                    align-items: center;
+
+                    .services__item{
+                        justify-content: center;
+                        width: 80%;
+                        .services__element{
+                            .services__service-description{
+                                width: 90%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .services__img-square{
+            display: none;
+        } 
+    }
+
+    .portfolio{
+        .portfolio__content{
+            flex-direction: column;
+            align-items: center;
+
+            .portfolio__card{
+                width: 70%;
+            }
+        }
+    }
+
+
+    .about{
+        .about__content{
+            align-items: center;
+
+            .about__description{
+                width: 90%;
+            }
+         }
+    }
+} 
+
+@media screen and (max-width:600px){
+
+    .header{
+        .header__header-nav{
+            .header__menu{
+                .header__menu-drop-down-content {
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+    }
+}

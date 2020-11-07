@@ -1,0 +1,35 @@
+<div class="header">
+    <div class="header__header-nav">
+        <div class="header__logo"><img src="img/logo.png" alt="Logo"></div>
+        <div class="header__menu" onclick="myFunction()">
+            <div class="header__menu-icon"><i class="fas fa-bars fa-2x"></i></div>
+            <div id="header__menu-drop-down" class="header__menu-drop-down-content header__menu-drop-down-content_hidden">
+                <p>Menu</p>
+                <a href="#" style="color: #10CAB7;">Home</a>
+                <a href="#">Services</a>
+                <a href="#">Portfolio</a>
+                <a href="#">About</a>
+                <p>Get in touch</p>
+                <a href="#">Contact me</a>
+                <p>Get Social</p>
+                <a href="#">Behance</a>
+                <a href="#">Dribble</a>
+                <a href="#">Twitter</a>
+                <p>@leon.com 2019</p>
+            </div>
+        </div>
+    </div>
+    <div class="header__greeting-block">
+        <div class="header__greeting-headline"><h1>Hello There!</h1></div>
+        <div class="header__greeting-description"><p>We are Leon - Super Creative & Minimal Agency Web Template</p></div>
+    </div>
+</div>
+<script>
+    function myFunction() {
+        if(document.getElementById("header__menu-drop-down").classList.contains("header__menu-drop-down-content_hidden")){
+          document.getElementById("header__menu-drop-down").classList.replace("header__menu-drop-down-content_hidden","header__menu-drop-down-content_visible");
+        }else{
+          document.getElementById("header__menu-drop-down").classList.replace("header__menu-drop-down-content_visible","header__menu-drop-down-content_hidden");
+        }
+    }
+  </script>
