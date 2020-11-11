@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leon</title>
+    <link rel="stylesheet" href="../node_modules/@fortawesome/fontawesome-free/css/all.css">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+    <div class="header">
+    <div class="header__header-nav">
+        <div class="header__logo"><img src="img/logo.png" alt="Logo"></div>
+        <div class="header__menu" onclick="displayMenu()">
+            <div class="header__menu-icon"><i class="fas fa-bars fa-2x"></i></div>
+            <div id="header__menu-drop-down" class="header__menu-drop-down-content_hidden">
+                <div class="header__section-block">
+                    <p class="header__section">Menu</p>
+                    <a href="#" class="header__link_active">Home</a>
+                    <a href="#" class="header__link">Services</a>
+                    <a href="#" class="header__link">Portfolio</a>
+                    <a href="#" class="header__link">About</a>
+                </div>
+                <div class="header__section-block">
+                    <p class="header__section">Get in touch</p>
+                    <a href="#" class="header__link">Contact me</a>
+                </div>
+                <div class="header__section-block">
+                    <p class="header__section">Get Social</p>
+                    <a href="#" class="header__link">Behance</a>
+                    <a href="#" class="header__link">Dribble</a>
+                    <a href="#" class="header__link">Twitter</a>
+                </div>
+                <p class="header__email">@leon.com 2019</p>
+            </div>
+        </div>
+    </div>
+    <div class="header__greeting-block">
+        <div class="header__greeting-headline"><h1>Hello There!</h1></div>
+        <div class="header__greeting-description"><p>We are Leon - Super Creative & Minimal Agency Web Template</p></div>
+    </div>
+</div>
+<script>
+    function displayMenu() {
+        const header__menu=document.getElementById("header__menu-drop-down");
+        const menuList=header__menu.classList;
+        if(menuList.contains("header__menu-drop-down-content_hidden")){
+          menuList.replace("header__menu-drop-down-content_hidden","header__menu-drop-down-content_visible");
+        }else{
+          menuList.replace("header__menu-drop-down-content_visible","header__menu-drop-down-content_hidden");
+        }
+    }
+  </script>
+
+    <div class="steps">
+    <div class="steps__item">
+        <i class="far fa-lightbulb fa-4x blue-icon"></i>
+        <div class="steps__step-header">Tell us your idea</div>
+        <div class="steps__step-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque blanditiis velit, magni enim praesentium aliquid</div>
+    </div>
+    <div class="steps__item">
+        <i class="fas fa-magic fa-4x blue-icon"></i>
+        <div class="steps__step-header">We Will Do All The Work</div>
+        <div class="steps__step-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque blanditiis velit, magni enim praesentium aliquid</div>
+    </div>
+    <div class="steps__item">
+        <i class="fas fa-globe fa-4x blue-icon"></i>
+        <div class="steps__step-header">Your Product Is Worldwide</div>
+        <div class="steps__step-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque blanditiis velit, magni enim praesentium aliquid</div>
+    </div>
+</div>
+    <div class="services">
+    <div class="services__img"><img src="img/services.png" alt="Services"></div>
+    <div class="services__content">
+        <div class="services__items">
+            <div class="services__row">        
+                <div class="services__item">
+                    <div class="services__icon"><i class="fas fa-print fa-2x blue-icon"></i></div>
+                    <div class="services__element">
+                        <div class="services__service-title"><h3>Graphic Design</h3></div>
+                        <div class="services__service-description"><p>Graphic design is the process of visual communication and problem-solving using one or more of typography, photography and illustration.</p></div>
+                    </div>
+                </div>
+                <div class="services__item">
+                    <div class="services__icon"><i class="far fa-comment-alt fa-2x blue-icon"></i></div>
+                    <div class="services__element">
+                        <div class="services__service-title"><h3>UI & UX</h3></div>
+                        <div class="services__service-description"><p>Process of enhancing user satisfaction with a product by improving the usability,accessability, and pleasure provided in the interaction.</p></div>
+                    </div>
+                </div>
+            </div>
+            <div class="services__row">        
+                <div class="services__item">
+                    <div class="services__icon"><i class="fas fa-palette fa-2x blue-icon"></i></div>
+                    <div class="services__element">
+                        <div class="services__service-title"><h3>Web Design</h3></div>
+                        <div class="services__service-description"><p>Web design encompasses many different skills and disciplines in the production and maintenance of websites.</p></div>
+                    </div>
+                </div>
+                <div class="services__item">
+                    <div class="services__icon laptop-icon"><i class="fas fa-laptop-code fa-2x blue-icon"></i></div>
+                    <div class="services__element">
+                        <div class="services__service-title"><h3>Web Development</h3></div>
+                        <div class="services__service-description"><p>Web development is a broad term for the work involved in developing a web site for the Internet or an internet.</p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="services__img-square"><img src="img/square.png" alt="Square"></div>
+    </div>
+</div>
+    
+    <div class="portfolio">
+        <div class="portfolio__img">
+            <img src="img/portfolio.png" alt="portfolio">
+        </div>
+        <div class="portfolio__content">
+            <div class="portfolio__card">
+                <div class="portfolio__element">
+                    <div class="portfolio__project-title">Project here</div>
+                    <div class="portfolio__project-description">My creative ability is difficult to measure because it can manifest in so many surprising</div>
+                </div>
+            </div>
+            <div class="portfolio__card">
+                <div class="portfolio__element">
+                    <div class="portfolio__project-title">Project here</div>
+                    <div class="portfolio__project-description">My creative ability is difficult to measure because it can manifest in so many surprising</div>
+                </div>
+            </div>
+            <div class="portfolio__card">
+                <div class="portfolio__element">
+                    <div class="portfolio__project-title">Project here</div>
+                    <div class="portfolio__project-description">My creative ability is difficult to measure because it can manifest in so many surprising</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="about">
+        <div class="about__img"><img src="img/about.png" alt="About"></div>
+        <div class="about__content">
+            <div class="about__square-img"><img src="img/square-2.png" alt="Square"></div>
+            <div class="about__description">
+                <div class="about__description_bold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque blanditiis velit, magni enim praesentium aliquid similique
+                </div>
+                <hr/>
+                <div class="about__description_light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque blanditiis velit, magni enim praesentium aliquid simili</div>
+            </div>
+        </div>
+    </div>
+    <div class="contact">
+    <div class="contact__img"><img src="img/contact.png" alt="Contact"></div>
+    <div class="contact__content">        
+            <p class="contact__header">Feel free to drop us a line at:</p>
+            <p class="contact__email">leonagency@mail.com</p>
+            <div class="contact__social-networks">Find us on social networks:
+                <div class="contact__social-networks-list">
+                        <i class="fas fa-basketball-ball grey-icon"></i>
+                        <i class="fab fa-google-plus-g grey-icon"></i>
+                        <i class="fab fa-twitter grey-icon"></i>
+                </div> 
+            </div>
+    </div>
+</div>
+
+    <div class="footer"><p>Ⓒ 2019 - <span class="footer__company-name"> Leon</span>, All Rights Recerved</p></div>
+</body>
+</html>
