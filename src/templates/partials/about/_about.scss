@@ -1,0 +1,40 @@
+.about__img{
+    @extend %imgBlocksStyle;
+}
+
+.about__content{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+
+    @media screen and (max-width:800px){
+        align-items: center;
+    }
+}
+
+.about__description{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    justify-content: center;
+    margin-left: 60px;
+
+    @media screen and (max-width:800px){
+        width: 90%;
+    } 
+}
+
+.about__description_bold{
+    font-weight: bold;
+    font-size: 1.3em;
+    line-height: 35px;
+    margin-bottom: 30px;
+    color: $grey-color;
+    width: 90%;
+}
+
+.about__description_light{
+    line-height: 35px;
+    color: #666565;
+    width: 90%;
+}

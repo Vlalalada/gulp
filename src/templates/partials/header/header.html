@@ -1,21 +1,21 @@
 <div class="header">
     <div class="header__header-nav">
         <div class="header__logo"><img src="img/logo.png" alt="Logo"></div>
-        <div class="header__menu" onclick="myFunction()">
+        <div class="header__menu" onclick="displayMenu()">
             <div class="header__menu-icon"><i class="fas fa-bars fa-2x"></i></div>
-            <div id="header__menu-drop-down" class="header__menu-drop-down-content header__menu-drop-down-content_hidden">
-                <p class="header__p">Menu</p>
-                <a href="#" style="color: #10CAB7;" class="header__link">Home</a>
+            <div id="header__menu-drop-down" class="header__menu-drop-down-content_hidden">
+                <p class="header__section">Menu</p>
+                <a href="#" class="header__link_active">Home</a>
                 <a href="#" class="header__link">Services</a>
                 <a href="#" class="header__link">Portfolio</a>
                 <a href="#" class="header__link">About</a>
-                <p class="header__p">Get in touch</p>
+                <p class="header__section">Get in touch</p>
                 <a href="#" class="header__link">Contact me</a>
-                <p class="header__p">Get Social</p>
+                <p class="header__section">Get Social</p>
                 <a href="#" class="header__link">Behance</a>
                 <a href="#" class="header__link">Dribble</a>
                 <a href="#" class="header__link">Twitter</a>
-                <p class="header__p">@leon.com 2019</p>
+                <p class="header__email">@leon.com 2019</p>
             </div>
         </div>
     </div>
@@ -25,11 +25,12 @@
     </div>
 </div>
 <script>
-    function myFunction() {
-        if(document.getElementById("header__menu-drop-down").classList.contains("header__menu-drop-down-content_hidden")){
-          document.getElementById("header__menu-drop-down").classList.replace("header__menu-drop-down-content_hidden","header__menu-drop-down-content_visible");
+    function displayMenu() {
+        const header__menu=document.getElementById("header__menu-drop-down");
+        if(header__menu.classList.contains("header__menu-drop-down-content_hidden")){
+          header__menu.classList.replace("header__menu-drop-down-content_hidden","header__menu-drop-down-content_visible");
         }else{
-          document.getElementById("header__menu-drop-down").classList.replace("header__menu-drop-down-content_visible","header__menu-drop-down-content_hidden");
+          header__menu.classList.replace("header__menu-drop-down-content_visible","header__menu-drop-down-content_hidden");
         }
     }
   </script>

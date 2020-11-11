@@ -1,0 +1,13 @@
+.footer{
+    background-color: $grey-color;
+    display: flex;
+    height: 70px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+}
+
+.footer__company-name{
+    color:$blue-color;
+}

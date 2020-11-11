@@ -1,0 +1,37 @@
+.contact{
+    display: flex;
+    flex-direction: column;
+    background-color: $grey-background-color;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.contact__img{
+    @extend %imgBlocksStyle;
+}
+
+.contact__content{
+    display: flex;
+    width: 70%;
+    flex-direction: column;
+    background-color: #FAFAFA;
+    margin-top: 30px;
+    margin-bottom: 80px;
+}
+
+.contact__header{
+    font-weight: bold;
+    font-size:2.5em;
+    color: #2C4755;
+}
+
+.contact__email{
+    font-weight:bold;
+    font-size:2em;
+    color: #10CAB7;
+}
+
+.contact__social-networks{
+    color: #666565;
+    font-size:1em;
+}

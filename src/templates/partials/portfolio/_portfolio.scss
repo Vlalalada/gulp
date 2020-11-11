@@ -1,0 +1,52 @@
+.portfolio{
+    background-color: $grey-background-color;
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+}
+
+.portfolio__img{
+    @extend %imgBlocksStyle;
+}
+
+.portfolio__content{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px;
+
+    @media screen and (max-width:800px){
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.portfolio__card{
+    width: 25%;
+    height: 400px;
+    margin-bottom: 100px;
+    background-color: #F6F6F6;
+    display: flex;
+    align-items: flex-end;
+
+    @media screen and (max-width:800px){
+        width: 70%;
+    }
+}
+
+.portfolio__element{
+    background-color: white;
+    padding-left: 20px;
+}
+
+.portfolio__project-title{
+    font-weight: bold;
+    font-size: 20px;
+    color: #1F2021;
+    margin-top: 15px;
+}
+
+.portfolio__project-description{
+    color: #2C4755;
+    margin-top: 10px;
+    line-height: 25px;
+}
