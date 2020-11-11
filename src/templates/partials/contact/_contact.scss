@@ -26,12 +26,33 @@
 }
 
 .contact__email{
-    font-weight:bold;
-    font-size:2em;
+    font-weight: bold;
+    font-size: 2em;
     color: #10CAB7;
+
+    @media screen and (max-width:500px) {
+        font-size: 7vw;
+    }
 }
 
 .contact__social-networks{
     color: #666565;
     font-size:1em;
+    display: flex;
+    flex-direction: row;
+
+    @media screen and (max-width:450px) {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+}
+
+.contact__social-networks-list{
+    @media screen and (max-width:450px) {
+        margin-top: 20px;
+    }
+}
+
+.laptop-icon{
+    margin-right: 10px;
 }

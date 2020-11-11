@@ -5,7 +5,8 @@
 
 .header__menu-drop-down-content_visible{
     @extend .header__menu-drop-down-content;
-    display: block;
+    display: flex;
+    flex-direction: column;
 }
 
 .header__header-nav{
@@ -33,6 +34,19 @@
         left: 0;
         width: 100%;
         height: 100%;
+    }
+
+    @media screen and (max-width:900px){
+        right: 30px;
+    }
+
+    @media screen and (orientation:landscape) and (max-height:550px){
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        flex-direction: row;
+        justify-content: space-around;
     }
 }
 
@@ -63,6 +77,9 @@
 
 .header__email{
     @extend .header__section;
+    @media (orientation:landscape) and (max-height:550px){
+        align-self: flex-end;
+    }
 }
 
 .header__greeting-block{
@@ -72,6 +89,10 @@
     align-items: center;
     justify-content: flex-start;
     height: 350px;
+
+    @media screen and (max-width:800px){
+        height: 200px;
+    }
 }
 
 .header__greeting-headline{
