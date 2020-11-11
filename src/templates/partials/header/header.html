@@ -27,10 +27,11 @@
 <script>
     function displayMenu() {
         const header__menu=document.getElementById("header__menu-drop-down");
-        if(header__menu.classList.contains("header__menu-drop-down-content_hidden")){
-          header__menu.classList.replace("header__menu-drop-down-content_hidden","header__menu-drop-down-content_visible");
+        const menuList=header__menu.classList;
+        if(menuList.contains("header__menu-drop-down-content_hidden")){
+          menuList.replace("header__menu-drop-down-content_hidden","header__menu-drop-down-content_visible");
         }else{
-          header__menu.classList.replace("header__menu-drop-down-content_visible","header__menu-drop-down-content_hidden");
+          menuList.replace("header__menu-drop-down-content_visible","header__menu-drop-down-content_hidden");
         }
     }
   </script>
